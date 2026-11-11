@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Auryx — Agencia creativa | Estrategia, diseño y tecnología</title>
+  <meta name="description" content="Auryx es una agencia creativa en Bogotá: estrategia, diseño web, contenido, publicidad, automatización y chatbots con inteligencia artificial para marcas que quieren ir más lejos.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:site_name" content="Auryx">
+  <meta property="og:title" content="Auryx — Ir más lejos.">
+  <meta property="og:description" content="Estrategia, diseño y tecnología en un solo equipo. Ahora con inteligencia artificial.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/hero-aura.webp" type="image/webp">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js"></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#servicios">Saltar al contenido</a>
+  <div class="progress" aria-hidden="true"><span class="progress__bar"></span></div>
+
+  <!-- Gradientes compartidos por los SVG de la página -->
+  <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="gA" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#8EA7FF"/><stop offset="1" stop-color="#7B5CFF"/></linearGradient>
+      <linearGradient id="gF" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7B5CFF"/><stop offset="1" stop-color="#4A33C4"/></linearGradient>
+      <linearGradient id="gFlow" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5CE1FF" stop-opacity="0.25"/><stop offset="0.5" stop-color="#5CE1FF"/><stop offset="1" stop-color="#7B5CFF" stop-opacity="0.5"/></linearGradient>
+      <linearGradient id="gGrow" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3346C4"/><stop offset="1" stop-color="#1FA9D6"/></linearGradient>
+      <linearGradient id="gGrowFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1FA9D6" stop-opacity="0.25"/><stop offset="1" stop-color="#1FA9D6" stop-opacity="0"/></linearGradient>
+      <symbol id="logoA" viewBox="0 0 120 100"><path d="M2,96 L50,14 Q60,0 70,14 L118,96 L96,96 L60,34 Z" fill="url(#gA)"/><path d="M60,34 L70,14 L118,96 L96,96 Z" fill="url(#gF)" opacity="0.92"/></symbol>
+      <symbol id="heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ============ NAVEGACIÓN ============ -->
+  <header class="nav" data-nav>
+    <nav class="nav__inner" aria-label="Principal">
+      <a class="nav__brand" href="#inicio" aria-label="Auryx, inicio">
+        <svg width="22" height="18" aria-hidden="true"><use href="#logoA"/></svg>
+        <span>Auryx</span>
+      </a>
+      <div class="nav__scroller">
+        <ul class="nav__links">
+          <li><a href="#ia">IA</a></li>
+          <li><a href="#web">Web</a></li>
+          <li><a href="#contenido">Contenido</a></li>
+          <li><a href="#estrategia">Estrategia</a></li>
+          <li><a href="#publicidad">Publicidad</a></li>
+          <li><a href="#automatizacion">Automatización</a></li>
+          <li><a href="#soporte">Soporte</a></li>
+          <li><a href="#planes">Planes</a></li>
+        </ul>
+      </div>
+      <a class="btn btn--dark btn--sm" href="#contacto">Cotizar</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <canvas class="hero__particles" aria-hidden="true"></canvas>
+
+      <div class="hero__copy" data-hero-copy>
+        <p class="eyebrow text-aura hero__eyebrow">Auryx · Agencia creativa</p>
+        <h1 class="hero__title">
+          <span class="word"><span>Ir</span></span>
+          <span class="word"><span>más</span></span>
+          <span class="word"><span class="text-aura">lejos.</span></span>
+        </h1>
+        <p class="hero__lead">Estrategia, diseño y tecnología en un solo equipo. Ahora con inteligencia artificial.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contacto" data-magnetic>Agenda una conversación</a>
+          <a class="link link--lavender" href="#servicios">Explora los servicios <span aria-hidden="true">›</span></a>
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-hidden="true" data-hero-visual>
+        <div class="hero__glow"></div>
+        <img src="assets/img/hero-aura.webp" alt="" width="2880" height="1200" fetchpriority="high">
+      </div>
+
+      <ul class="hero__stats" data-stats>
+        <li><strong class="stat stat--violet" data-count="7">7</strong><span>especialidades</span></li>
+        <li><strong class="stat stat--magenta" data-count="1">1</strong><span>solo equipo</span></li>
+        <li><strong class="stat stat--cyan" data-count="24" data-suffix="/7">24/7</strong><span>asistentes con IA</span></li>
+        <li><strong class="stat">Bogotá</strong><span>con atención remota</span></li>
+      </ul>
+    </section>
+
+    <!-- ============ CINTA DE SERVICIOS ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Estrategia</span><svg><use href="#logoA"/></svg>
+        <span>Diseño web</span><svg><use href="#logoA"/></svg>
+        <span>Contenido</span><svg><use href="#logoA"/></svg>
+        <span>Publicidad</span><svg><use href="#logoA"/></svg>
+        <span>Automatización</span><svg><use href="#logoA"/></svg>
+        <span>Inteligencia artificial</span><svg><use href="#logoA"/></svg>
+        <span>Soporte</span><svg><use href="#logoA"/></svg>
+        <span>Estrategia</span><svg><use href="#logoA"/></svg>
+        <span>Diseño web</span><svg><use href="#logoA"/></svg>
+        <span>Contenido</span><svg><use href="#logoA"/></svg>
+        <span>Publicidad</span><svg><use href="#logoA"/></svg>
+        <span>Automatización</span><svg><use href="#logoA"/></svg>
+        <span>Inteligencia artificial</span><svg><use href="#logoA"/></svg>
+        <span>Soporte</span><svg><use href="#logoA"/></svg>
+      </div>
+    </div>
+
+    <!-- ============ INTRO SERVICIOS ============ -->
+    <section class="intro" id="servicios">
+      <h2 class="display reveal">Siete especialidades.<br>Una sola visión.</h2>
+      <p class="lead reveal d1">Cada servicio tiene su propia personalidad, pero todos comparten el mismo origen: ayudarte a crecer.</p>
+    </section>
+
+    <div class="tiles">
+
+      <!-- Aura · IA -->
+      <article class="tile tile--ia reveal" id="ia" data-tile>
+        <img class="tile--ia__bg" src="assets/img/aura-ribbon.webp" alt="" loading="lazy" width="2400" height="1500">
+        <div class="tile--ia__shade" aria-hidden="true"></div>
+        <div class="tile__copy">
+          <p class="tile__eyebrow text-aura">Auryx Aura · Inteligencia artificial</p>
+          <h3 class="tile__title tile__title--xl">Asistentes que piensan<br>con tu negocio.</h3>
+          <p class="tile__text">Chatbots para WhatsApp y web que responden, califican y agendan las 24 horas, con el tono de tu marca.</p>
+          <div class="tile__actions">
+            <a class="btn btn--light" href="#contacto" data-magnetic>Quiero mi asistente</a>
+            <a class="link link--lavender" href="#planes">Más información <span aria-hidden="true">›</span></a>
+          </div>
+        </div>
+        <div class="chat" aria-hidden="true" data-chat>
+          <div class="chat__msg chat__msg--in">Hola, ¿tienen cita disponible este sábado?</div>
+          <div class="chat__typing"><span></span><span></span><span></span></div>
+          <div class="chat__msg chat__msg--out">¡Hola! Sí, tengo dos horarios libres: 10:00 a. m. y 4:00 p. m. ¿Cuál te reservo?</div>
+          <div class="chat__chips"><span>10:00 a. m.</span><span>4:00 p. m.</span></div>
+        </div>
+      </article>
+
+      <div class="tiles__grid">
+
+        <!-- Web -->
+        <article class="tile tile--web reveal" id="web" data-tile>
+          <div class="tile__copy">
+            <p class="tile__eyebrow">Auryx Web</p>
+            <h3 class="tile__title">Sitios que trabajan<br>por ti.</h3>
+            <p class="tile__text">Diseño y desarrollo web, landing pages y tiendas en línea.</p>
+            <div class="tile__links"><a class="link" href="#contacto">Cotizar <span aria-hidden="true">›</span></a><a class="link" href="#planes">Más información <span aria-hidden="true">›</span></a></div>
+          </div>
+          <div class="tile__visual browser" aria-hidden="true">
+            <div class="browser__bar"><i></i><i></i><i></i><span>tuempresa.com</span></div>
+            <div class="browser__hero">
+              <img src="assets/img/aura-ribbon.webp" alt="" loading="lazy">
+              <div class="browser__lines"><b></b><b></b><em></em><u></u></div>
+            </div>
+            <div class="browser__cards"><span></span><span></span><span></span></div>
+          </div>
+        </article>
+
+        <!-- Pulso · Contenido -->
+        <article class="tile tile--pulso reveal d1" id="contenido" data-tile>
+          <div class="tile__copy">
+            <p class="tile__eyebrow">Auryx Pulso</p>
+            <h3 class="tile__title">Contenido que<br>se siente vivo.</h3>
+            <p class="tile__text">Redes sociales, parrillas, diseño de piezas, video y comunidad.</p>
+            <div class="tile__links"><a class="link" href="#contacto">Cotizar <span aria-hidden="true">›</span></a><a class="link" href="#planes">Más información <span aria-hidden="true">›</span></a></div>
+          </div>
+          <div class="tile__visual pulso" aria-hidden="true">
+            <div class="phone">
+              <div class="phone__screen">
+                <div class="phone__head"><i></i><div><b></b><em></em></div></div>
+                <div class="phone__grid">
+                  <span class="g1"></span><span class="g2"></span><span class="g3"></span>
+                  <span class="g4"></span><span class="g5"></span><span class="g6"></span>
+                  <span class="g7"></span><span class="g8"></span><span class="g9"></span>
+                </div>
+              </div>
+            </div>
+            <div class="pulso__badge"><svg width="15" height="15"><use href="#heart"/></svg>Nueva publicación</div>
+            <div class="pulso__hearts">
+              <svg><use href="#heart"/></svg><svg><use href="#heart"/></svg><svg><use href="#heart"/></svg><svg><use href="#heart"/></svg>
+            </div>
+          </div>
+        </article>
+
+        <!-- Norte · Estrategia -->
+        <article class="tile tile--norte reveal" id="estrategia" data-tile>
+          <div class="tile__copy">
+            <p class="tile__eyebrow">Auryx Norte</p>
+            <h3 class="tile__title">Primero,<br>el rumbo.</h3>
+            <p class="tile__text">Diagnóstico, objetivos y un plan de marketing digital con prioridades claras.</p>
+            <div class="tile__links"><a class="link" href="#contacto">Cotizar <span aria-hidden="true">›</span></a><a class="link" href="#planes">Más información <span aria-hidden="true">›</span></a></div>
+          </div>
+          <div class="tile__visual compass" aria-hidden="true">
+            <svg viewBox="0 0 400 260" class="compass__svg">
+              <g class="compass__rings" fill="none" stroke="#2A1A8C">
+                <circle cx="200" cy="230" r="200" stroke-opacity="0.08"/>
+                <circle cx="200" cy="230" r="150" stroke-opacity="0.12"/>
+                <circle cx="200" cy="230" r="100" stroke-opacity="0.18"/>
+                <circle cx="200" cy="230" r="50" stroke-opacity="0.3"/>
+              </g>
+              <circle class="compass__pulse" cx="200" cy="230" r="50" fill="none" stroke="#7B5CFF"/>
+              <circle class="compass__pulse compass__pulse--2" cx="200" cy="230" r="50" fill="none" stroke="#7B5CFF"/>
+              <line x1="200" y1="230" x2="200" y2="20" stroke="#2A1A8C" stroke-opacity="0.15" stroke-dasharray="3 5"/>
+              <g class="compass__needle"><use href="#logoA" x="160" y="92" width="80" height="66"/></g>
+              <circle class="compass__dot" cx="98" cy="160" r="5" fill="#2A1A8C"/>
+              <circle class="compass__dot" cx="318" cy="132" r="5" fill="#7B5CFF"/>
+              <circle class="compass__dot" cx="268" cy="196" r="5" fill="#8EA7FF"/>
+            </svg>
+            <span class="tag tag--diag">Diagnóstico</span>
+            <span class="tag tag--obj">Objetivos</span>
+            <span class="tag tag--plan">Plan de acción</span>
+          </div>
+        </article>
+
+        <!-- Impulso · Publicidad -->
+        <article class="tile tile--impulso reveal d1" id="publicidad" data-tile>
+          <div class="tile__copy">
+            <p class="tile__eyebrow">Auryx Impulso</p>
+            <h3 class="tile__title">Que te encuentren<br>primero.</h3>
+            <p class="tile__text">Pauta en Meta y Google, y posicionamiento SEO para llegar a quien te busca.</p>
+            <div class="tile__links"><a class="link" href="#contacto">Cotizar <span aria-hidden="true">›</span></a><a class="link" href="#planes">Más información <span aria-hidden="true">›</span></a></div>
+          </div>
+          <svg class="growth" viewBox="0 0 560 220" preserveAspectRatio="none" aria-hidden="true">
+            <path class="growth__fill" d="M0,200 C120,190 180,170 260,140 C340,110 400,70 560,20 L560,220 L0,220 Z" fill="url(#gGrowFill)"/>
+            <path class="growth__line" d="M0,200 C120,190 180,170 260,140 C340,110 400,70 560,20" fill="none" stroke="url(#gGrow)" stroke-width="3" pathLength="1"/>
+          </svg>
+          <div class="tile__visual search" aria-hidden="true">
+            <div class="search__bar">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#6E6E73" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+              <span class="search__typed" data-typewriter="diseño de páginas web en Bogotá">diseño de páginas web en Bogotá</span><span class="search__caret"></span>
+            </div>
+            <div class="search__ad">
+              <span class="search__label">Patrocinado · tuempresa.com</span>
+              <span class="search__headline">Tu negocio, justo aquí</span>
+              <span class="search__desc">Donde tus clientes ya están buscando.</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Flujo · Automatización -->
+        <article class="tile tile--flujo reveal" id="automatizacion" data-tile>
+          <div class="tile--flujo__glow" aria-hidden="true"></div>
+          <div class="tile__copy">
+            <p class="tile__eyebrow">Auryx Flujo</p>
+            <h3 class="tile__title">Menos tareas.<br>Más negocio.</h3>
+            <p class="tile__text">Automatizaciones que conectan formularios, CRM, correo, hojas de cálculo y WhatsApp.</p>
+            <div class="tile__links"><a class="link" href="#contacto">Cotizar <span aria-hidden="true">›</span></a><a class="link" href="#planes">Más información <span aria-hidden="true">›</span></a></div>
+          </div>
+          <div class="tile__visual flow" aria-hidden="true">
+            <svg viewBox="0 0 460 250" class="flow__svg">
+              <g fill="none" stroke="url(#gFlow)" stroke-width="2">
+                <path id="fl1" d="M80,70 C160,70 160,140 230,140"/>
+                <path id="fl2" d="M80,200 C160,200 160,140 230,140"/>
+                <path id="fl3" d="M230,140 C300,140 300,70 380,70"/>
+                <path id="fl4" d="M230,140 C300,140 300,200 380,200"/>
+              </g>
+              <circle r="3.5" fill="#5CE1FF"><animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#fl1"/></animateMotion></circle>
+              <circle r="3.5" fill="#B9A8FF"><animateMotion dur="2.4s" begin="0.6s" repeatCount="indefinite"><mpath href="#fl2"/></animateMotion></circle>
+              <circle r="3.5" fill="#5CE1FF"><animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite"><mpath href="#fl3"/></animateMotion></circle>
+              <circle r="3.5" fill="#B9A8FF"><animateMotion dur="2.4s" begin="1.8s" repeatCount="indefinite"><mpath href="#fl4"/></animateMotion></circle>
+              <circle class="flow__halo" cx="230" cy="140" r="48" fill="none" stroke="#5CE1FF"/>
+              <circle cx="230" cy="140" r="34" fill="#071F28" stroke="#5CE1FF" stroke-width="1.5"/>
+              <g transform="translate(212,126) scale(0.3)"><path d="M2,96 L50,14 Q60,0 70,14 L118,96 L96,96 L60,34 Z" fill="#5CE1FF"/></g>
+            </svg>
+            <span class="flow__node flow__node--form">Formulario</span>
+            <span class="flow__node flow__node--sheet">Hoja de cálculo</span>
+            <span class="flow__node flow__node--crm">CRM</span>
+            <span class="flow__node flow__node--wa">WhatsApp</span>
+          </div>
+        </article>
+
+        <!-- Respaldo · Soporte -->
+        <article class="tile tile--respaldo reveal d1" id="soporte" data-tile>
+          <div class="tile__copy">
+            <p class="tile__eyebrow">Auryx Respaldo</p>
+            <h3 class="tile__title">Siempre al día.<br>Siempre seguro.</h3>
+            <p class="tile__text">Consultoría, mantenimiento, actualizaciones y seguridad para tu sitio.</p>
+            <div class="tile__links"><a class="link" href="#contacto">Cotizar <span aria-hidden="true">›</span></a><a class="link" href="#planes">Más información <span aria-hidden="true">›</span></a></div>
+          </div>
+          <div class="tile__visual status" aria-hidden="true" data-status>
+            <div class="status__head">
+              <svg viewBox="0 0 24 24" width="34" height="34"><path d="M12 2l8 3.4v6.1c0 4.8-3.4 8.6-8 10.5c-4.6-1.9-8-5.7-8-10.5V5.4z" fill="#1D7A4C"/><path class="status__check" d="M8.5 12l2.4 2.4L15.8 9.5" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" pathLength="1"/></svg>
+              <div><strong>Estado de tu sitio</strong><span>Revisión mensual</span></div>
+            </div>
+            <div class="status__row"><span>Copias de seguridad</span><em data-done="Al día">Al día</em></div>
+            <div class="status__row"><span>Plugins y núcleo</span><em data-done="Actualizados">Actualizados</em></div>
+            <div class="status__row"><span>Certificado SSL</span><em data-done="Activo">Activo</em></div>
+            <div class="status__row"><span>Velocidad de carga</span><em data-done="Revisada">Revisada</em></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- ============ PLANES ============ -->
+    <section class="plans" id="planes">
+      <h2 class="display reveal">¿Qué plan es para ti?</h2>
+      <p class="lead reveal d1">Empieza con lo esencial o combina todas las especialidades.</p>
+
+      <div class="plans__grid">
+        <article class="plan plan--presencia reveal" data-tile>
+          <div class="plan__top"><div class="plan__chip"><svg viewBox="0 0 120 100" width="34" height="28" aria-hidden="true"><path d="M2,96 L50,14 Q60,0 70,14 L118,96 L96,96 L60,34 Z" fill="#FFFFFF"/></svg></div></div>
+          <h3 class="plan__name">Presencia</h3>
+          <p class="plan__lead">Para marcas que necesitan existir bien en digital.</p>
+          <p class="plan__price"><span>Desde</span> <strong>[PRECIO]</strong></p>
+          <a class="btn btn--primary btn--block" href="#contacto">Cotizar Presencia</a>
+          <ul class="plan__list">
+            <li>Sitio web o landing page</li>
+            <li>Perfiles de redes optimizados</li>
+            <li>Ficha de Google Business</li>
+            <li>Soporte el primer mes</li>
+          </ul>
+        </article>
+
+        <article class="plan plan--crecimiento plan--featured reveal d1" data-tile>
+          <div class="plan__top">
+            <div class="plan__chip"><svg viewBox="0 0 120 100" width="34" height="28" aria-hidden="true"><path d="M2,96 L50,14 Q60,0 70,14 L118,96 L96,96 L60,34 Z" fill="#FFFFFF"/></svg></div>
+            <span class="plan__badge">Recomendado</span>
+          </div>
+          <h3 class="plan__name">Crecimiento</h3>
+          <p class="plan__lead">Para atraer clientes de forma constante.</p>
+          <p class="plan__price"><span>Desde</span> <strong>[PRECIO]</strong></p>
+          <a class="btn btn--light btn--block" href="#contacto">Cotizar Crecimiento</a>
+          <ul class="plan__list">
+            <li>Todo lo de Presencia</li>
+            <li>Contenido mensual para redes</li>
+            <li>Pauta en Meta y Google</li>
+            <li>Informe mensual de resultados</li>
+          </ul>
+        </article>
+
+        <article class="plan plan--integral reveal d2" data-tile>
+          <div class="plan__top"><div class="plan__chip"><svg viewBox="0 0 120 100" width="34" height="28" aria-hidden="true"><path d="M2,96 L50,14 Q60,0 70,14 L118,96 L96,96 L60,34 Z" fill="#FFFFFF"/></svg></div></div>
+          <h3 class="plan__name">Integral</h3>
+          <p class="plan__lead">Para operar y vender con tecnología.</p>
+          <p class="plan__price"><span>Desde</span> <strong>[PRECIO]</strong></p>
+          <a class="btn btn--primary btn--block" href="#contacto">Cotizar Integral</a>
+          <ul class="plan__list">
+            <li>Todo lo de Crecimiento</li>
+            <li>Chatbot con IA para WhatsApp</li>
+            <li>Automatización de procesos</li>
+            <li>Mantenimiento y consultoría</li>
+          </ul>
+        </article>
+      </div>
+      <p class="plans__note reveal">¿Necesitas solo un servicio? Todos se pueden contratar por separado.</p>
+    </section>
+
+    <!-- ============ POR QUÉ AURYX ============ -->
+    <section class="why" id="por-que">
+      <h2 class="display display--sm reveal">Por qué Auryx.</h2>
+      <div class="why__grid">
+        <article class="why__card reveal">
+          <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#5B3FE0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 14.5c3 0 6 1.8 6 5.5"/></svg>
+          <h3>Un solo equipo</h3>
+          <p>Estrategia, diseño y desarrollo hablando el mismo idioma.</p>
+        </article>
+        <article class="why__card reveal d1">
+          <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#9B1FC9" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M6 6l2 2M16 16l2 2M6 18l2-2M16 8l2-2"/><circle cx="12" cy="12" r="3"/></svg>
+          <h3>Tecnología con propósito</h3>
+          <p>IA y automatización donde ahorran tiempo real.</p>
+        </article>
+        <article class="why__card reveal d2">
+          <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#1F4FB8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+          <h3>Resultados medibles</h3>
+          <p>Objetivos al inicio e informes claros cada mes.</p>
+        </article>
+        <article class="why__card reveal d3">
+          <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#0E7FA6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          <h3>Desde Bogotá</h3>
+          <p>Trato directo y cercano, en tu zona horaria.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="contact" id="contacto">
+      <div class="contact__visual" aria-hidden="true">
+        <img src="assets/img/hero-aura.webp" alt="" loading="lazy" width="2880" height="1200">
+      </div>
+      <div class="contact__inner">
+        <p class="eyebrow text-aura reveal">Contacto</p>
+        <h2 class="display display--xl reveal d1">Tu próximo paso<br>empieza aquí.</h2>
+        <p class="lead lead--dark reveal d2">Cuéntanos qué necesitas y te enviamos una propuesta clara, sin compromiso.</p>
+
+        <div class="contact__grid">
+          <a class="contact-card reveal" href="mailto:hola@auryx.co" data-tile>
+            <span class="contact-card__icon contact-card__icon--mail"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6l8-6"/></svg></span>
+            <span class="contact-card__title">Escríbenos</span>
+            <span class="contact-card__text">Para propuestas, cotizaciones y proyectos nuevos.</span>
+            <span class="contact-card__value">[hola@auryx.co]</span>
+            <span class="contact-card__cta contact-card__cta--violet">Enviar correo ›</span>
+          </a>
+          <a class="contact-card reveal d1" href="#contacto" data-tile>
+            <span class="contact-card__icon contact-card__icon--wa"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.4-4A8 8 0 1 1 8.2 18.7z"/><path d="M9 10.5h.01M12 10.5h.01M15 10.5h.01"/></svg></span>
+            <span class="contact-card__title">WhatsApp</span>
+            <span class="contact-card__text">Para dudas rápidas y seguimiento de tu proyecto.</span>
+            <span class="contact-card__value">[+57 300 000 0000]</span>
+            <span class="contact-card__cta contact-card__cta--cyan">Abrir chat ›</span>
+          </a>
+          <a class="contact-card reveal d2" href="#contacto" data-tile>
+            <span class="contact-card__icon contact-card__icon--cal"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4M8 14h3"/></svg></span>
+            <span class="contact-card__title">Agenda una llamada</span>
+            <span class="contact-card__text">30 minutos para revisar tu caso, sin compromiso.</span>
+            <span class="contact-card__value">Elige el horario que prefieras</span>
+            <span class="contact-card__cta contact-card__cta--magenta">Agendar ›</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__line" aria-hidden="true"></div>
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="footer__logo" href="#inicio" aria-label="Auryx, volver al inicio">
+            <svg width="36" height="30" aria-hidden="true"><use href="#logoA"/></svg>
+            <span><strong>Auryx</strong><small>AGENCIA CREATIVA</small></span>
+          </a>
+          <p>Estrategia, diseño y tecnología para marcas que quieren ir más lejos.</p>
+        </div>
+        <div class="footer__cta">
+          <p>¿Tienes un proyecto en mente?</p>
+          <div class="footer__actions">
+            <a class="btn btn--dark btn--md" href="#contacto">Cotizar ahora</a>
+            <a class="social" href="#contacto" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17 7h.01"/></svg></a>
+            <a class="social" href="#contacto" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M8 10.5V16M8 7.8v.01M11.5 16v-5.5M11.5 13a2.5 2.5 0 0 1 5 0v3"/></svg></a>
+            <a class="social" href="#contacto" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.4-4A8 8 0 1 1 8.2 18.7z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__cols">
+        <div class="footer__col footer__col--services">
+          <h4>Servicios</h4>
+          <ul class="footer__services">
+            <li><a href="#ia"><i class="dot dot--aura"></i><span><b>Auryx Aura</b> · IA y chatbots</span></a></li>
+            <li><a href="#web"><i class="dot dot--web"></i><span><b>Auryx Web</b> · Sitios web</span></a></li>
+            <li><a href="#contenido"><i class="dot dot--pulso"></i><span><b>Auryx Pulso</b> · Contenido</span></a></li>
+            <li><a href="#estrategia"><i class="dot dot--norte"></i><span><b>Auryx Norte</b> · Estrategia</span></a></li>
+            <li><a href="#publicidad"><i class="dot dot--impulso"></i><span><b>Auryx Impulso</b> · Publicidad</span></a></li>
+            <li><a href="#automatizacion"><i class="dot dot--flujo"></i><span><b>Auryx Flujo</b> · Automatización</span></a></li>
+            <li><a href="#soporte"><i class="dot dot--respaldo"></i><span><b>Auryx Respaldo</b> · Soporte</span></a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Agencia</h4>
+          <ul>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#planes">Planes</a></li>
+            <li><a href="#por-que">Por qué Auryx</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="mailto:hola@auryx.co">[hola@auryx.co]</a></li>
+            <li>[WhatsApp +57 300 000 0000]</li>
+            <li>Bogotá, Colombia</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Auryx. Todos los derechos reservados.</span>
+        <div class="footer__legal">
+          <a href="#inicio">Política de privacidad</a>
+          <a href="#inicio">Términos de uso</a>
+          <a href="#inicio">Tratamiento de datos personales</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
