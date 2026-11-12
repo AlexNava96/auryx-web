@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alexnava96.github.io/auryx-web/sitemap.xml
